@@ -1,6 +1,6 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607369178189,
-  "repoUrl": "https://github.com/tokio-rs/tokio",
+  "lastUpdate": 1608683494950,
+  "repoUrl": "https://github.com/lukesteensen/tokio",
   "entries": {
     "sync_rwlock": [
       {
@@ -3313,6 +3313,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19308954,
             "range": "± 2881973",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "be9fdb697dd62e00ad3a9e492778c1b5af7cbf0b",
+          "message": "time: make Interval::poll_tick() public (#3316)",
+          "timestamp": "2020-12-22T12:31:14-08:00",
+          "tree_id": "c06c2c6a1618d8dd177cd844f8f816f06e6033b8",
+          "url": "https://github.com/lukesteensen/tokio/commit/be9fdb697dd62e00ad3a9e492778c1b5af7cbf0b"
+        },
+        "date": 1608683492441,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 176913,
+            "range": "± 18030",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 682817,
+            "range": "± 115132",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4460664,
+            "range": "± 1047427",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18923017,
+            "range": "± 2571813",
             "unit": "ns/iter"
           }
         ]
